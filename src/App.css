@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #ececec;
+}
+
+.container {
+  background-color: #ececec;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.input-container {
+  display: flex;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ff6f61;
+  border-radius: 6px;
+  outline: none;
+  margin-right: 0.5rem;
+}
+
+.add-button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-button:hover {
+  background-color: #fc857a; /* Slightly lighter shade on hover */
+}
+
+.add-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.4); /* Add a subtle focus ring */
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.items {
+  margin: 5px 5px;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+}
+
+.edit,
+.delete {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Edit button styles */
+.edit {
+  background-color: #67b279; /* Mint Green */
+  margin-left: 5px;
+}
+
+.edit:hover {
+  background-color: #74c387; /* Slightly lighter shade on hover */
+}
+
+.edit:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(103, 178, 121, 0.4); /* Add a subtle focus ring */
+}
+
+/* Delete button styles */
+.delete {
+  background-color: #b76767; /* Coral */
+}
+
+.delete:hover {
+  background-color: #c38787; /* Slightly lighter shade on hover */
+}
+
+.delete:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(183, 103, 103, 0.4); /* Add a subtle focus ring */
+}
+
+/* Media queries for responsiveness */
+
+/* Tablets and smaller devices */
+@media screen and (max-width: 768px) {
+  body {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+  }
+
+  .container {
+    width: 98%;
+  }
+
+  input,
+  .add-button {
+    font-size: 14px;
+  }
+
+  .edit,
+  .delete {
+    font-size: 12px;
+  }
+}
+
+/* Mobile phones and smaller devices */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 15px;
+    display: grid;
+    place-items: center;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  input,
+  .add-button {
+    font-size: 12px;
+  }
+
+  .edit,
+  .delete {
+    font-size: 10px;
+  }
+}
